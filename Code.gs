@@ -1,7 +1,7 @@
 function STOCKC(symbol){
     Logger.log("Yes, this was logged");
    symbol = encodeURI(symbol);
-    var api_key = "CBPKTAHONH2OF5JI";
+    var api_key = 'some_api_key';
     var url = "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol="+symbol+"&apikey="+api_key;
     var responseUrl = UrlFetchApp.fetch(url);
     var response = responseUrl.getContentText();
@@ -45,7 +45,7 @@ return closepricear;
 function STOCKD(symbol){
 
    symbol = encodeURI(symbol);
-    var api_key = "CBPKTAHONH2OF5JI";
+    var api_key = "some api key";
     var url = "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol="+symbol+"&apikey="+api_key;
     var responseUrl = UrlFetchApp.fetch(url);
     var response = responseUrl.getContentText();
